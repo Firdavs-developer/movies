@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>42-dars</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+  <!-- MOVIES RESULT START -->
+  <div class="container">
+    <div class="row movies-result my-5">
+        <!-- Movies loading -->
+      <div class="movie-loading">
+        <img src="./assets/loading/loadingImg.svg" alt="">
+      </div> 
+      
+    </div>
+  </div>
+  <!-- MOVIES RESULT END -->
+  
+  
+  
+  
+  <!-- MOVIE TEMPLATE START -->
+  <template class="movie-template">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+      <div class="card h-100">
+        <img class="movie-img card-img-top" src="https://picsum.photos/260/260" width="260" height="200" alt="">
+        <div class="card-body">
+          <h3 class="movie-title mb-3">Avangers</h3>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="movie-rating text-secondary">7.4</span>
+            <span class="movie-year text-secondary">2017</span>
+            <span class="movie-time text-secondary">2 hrs 6 min</span>
+          </div>
+          
+          <p class="movie-category">Horror</p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary w-100">More info</button>
+        </div>
+      </div>
+    </div>
+  </template>
+  <!-- MOVIE TEMPLATE END -->
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="./js/movies.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

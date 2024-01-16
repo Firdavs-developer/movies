@@ -1,0 +1,49 @@
+.movie-rating,
+.movie-year,
+.movie-time {
+  display: flex;
+  align-items: center;
+}
+
+.movie-rating::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-image: url("../assets/icons/star.svg");
+  background-repeat: no-repeat;
+}
+
+.movie-year::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-image: url("../assets/icons/calendar.svg");
+  background-repeat: no-repeat;
+}
+
+.movie-time::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-image: url("../assets/icons/clock.svg");
+  background-repeat: no-repeat;
+}
+
+.movie-loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
