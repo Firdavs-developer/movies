@@ -12,6 +12,19 @@
 
 </head>
 <body>
+
+  <!-- SEARCH START -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form class="movie-form mt-5" action="https://echohtmlacademy.ru" method="GET">
+          <input class="form-control movie-search-input" type="search" name="search" aria-label="Movie search input..." placeholder="search">
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <!-- SEARCH END -->
   <!-- MOVIES RESULT START -->
   <div class="container">
     <div class="row movies-result my-5">
@@ -43,16 +56,56 @@
           <p class="movie-category">Horror</p>
         </div>
         <div class="card-footer">
-          <button class="btn btn-primary w-100">More info</button>
+          <button type="button" class="btn btn-primary w-100 movie-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">More info</button>
         </div>
       </div>
     </div>
   </template>
   <!-- MOVIE TEMPLATE END -->
   
-  
+
+  <!-- MODAL START -->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-5">
+            <h3 class="modal-movie-title">Bir nima kino</h3>
+            <iframe class="border-0 modal-movie-iframe" height="250" width="450" src="" ></iframe>
+          </div>
+
+          <div class="col-7">
+            <div>
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="modal-movie-rating movie-rating text-secondary">7.4</span>
+                <span class="modal-movie-year movie-year text-secondary">2017</span>
+                <span class="modal-movie-time movie-time text-secondary">2 hrs 6 min</span>
+              </div>
+              <p class="modal-movie-category mb-1" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et non quibusdam officiis voluptatum odit consectetur, repellendus placeat doloremque reprehenderit quod fugit impedit architecto recusandae repudiandae voluptatem perspiciatis esse ad modi?</p>
+              <P class="modal-movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, aut.</P>
+            </div>
+            <a class="modal-movie-link" target="blank" href="">Show on IMDB</a>
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- MODAL END -->
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="./js/movies.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/movie-filter.js"></script>
 </body>
 </html>
