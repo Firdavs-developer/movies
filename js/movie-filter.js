@@ -37,7 +37,7 @@ elMovieCategory.appendChild(elMovieCategoryFragment);
 // CATEGORY BO'YICHA FILTER QILADIGAN FUNKSIYA YOZAMIZ
 const filterMoviesByCategory = (category) => {
     const filterMovies = movies.filter((m) => {
-        m.Categories.split("|").includes(category) || category === "All";
+       return m.Categories.split("|").includes(category) || category === "All";
     })
     renderMovies(filterMovies)
 }
@@ -47,3 +47,12 @@ elMovieCategory.addEventListener("change", () => {
 
     filterMoviesByCategory(inputValue)
 } )
+
+
+// Yillarni kiritganda yillar bo'yicha filterlab beradigan funksiya tuzamiz
+
+movies.filter((year) => {
+    if(year.movie_year >= 2000 && year.movie_year <= 2018){
+        console.log(year);
+    }
+})
